@@ -1,0 +1,190 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 28 jun. 2026, 2:23:48 p. m.
+    Author     : KaHeL
+*/
+/* MISMO ESTILO BASE */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #cde7ff, #ffd6f6, #e0ccff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* MENÚ (Reutilizado por si quieres volver al catálogo) */
+.menu {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: flex;
+    gap: 15px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* HEADER DEL CARRITO MODIFICADO: Ahora centra el cuadro */
+header {
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px 20px 15px;
+}
+
+/* NUEVO: EL CUADRADO FLOTANTE CON BLUR (Look idéntico al de productos) */
+.banner-header {
+    background: rgba(255, 255, 255, 0.65); /* Fondo semi-transparente */
+    backdrop-filter: blur(12px); /* Efecto vidrio esmerilado */
+    -webkit-backdrop-filter: blur(12px); /* Soporte navegadores antiguos */
+    padding: 20px 45px; /* Espacio interno para que respire el texto */
+    border-radius: 18px; /* Mismo redondeado que las tarjetas */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); /* Sombra flotante suave */
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Ajustes de tipografía internos */
+.banner-header h1 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 28px;
+}
+
+.banner-header p {
+    margin: 0;
+    color: #555;
+    font-size: 15px;
+}
+
+/* CONTENEDOR PRINCIPAL DEL CARRITO */
+.cart-page-container {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* LA GRAN TARJETA DEL CARRITO */
+.carrito-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* FILAS DE LOS POSTRES EN EL CARRITO */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.item-info h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.item-info small {
+    color: #666;
+    font-size: 14px;
+}
+
+/* BOTÓN ELIMINAR */
+.btn-eliminar {
+    background: none;
+    border: none;
+    color: #ff4757;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.btn-eliminar:hover {
+    background: rgba(255, 71, 87, 0.1);
+}
+
+/* CAJA DE TOTAL Y CONFIRMACIÓN */
+.cart-summary-box {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px dashed rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cart-summary-box h3 {
+    margin: 0 0 20px 0;
+    color: #333;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+/* BOTÓN CONFIRMAR PEDIDO (Azul Ore innovador) */
+.btn-confirmar {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.25);
+    transition: 0.3s;
+}
+
+.btn-confirmar:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.35);
+}
+
+/* MENSAJE DE CARRITO VACÍO */
+.empty-msg {
+    color: #777;
+    text-align: center;
+    font-style: italic;
+    padding: 20px 0;
+    margin: 0;
+}
+
+/* FOOTER BAR */
+.footer-bar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 12px;
+    box-sizing: border-box;
+}

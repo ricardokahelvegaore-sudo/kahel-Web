@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>D'KAHEL - Carrito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css?v=2">
+</head>
+<body>
+
+    <nav class="menu">
+       <a href="index.html">🏠 Inicio</a>
+        <a href="index1.html">🍰 Productos</a>
+        <a href="index2.html">🛒 Carrito</a>
+    </nav>
+
+    <header>
+        <div class="banner-header">
+            <h1>🛒 Mi Carrito de Compras</h1>
+            <p>Revisa tu pedido antes de confirmar ❤️</p>
+        </div>
+    </header>
+
+    <div class="cart-page-container">
+        <div class="carrito-card">
+            
+            <div id="cart-items"></div> 
+            
+            <div class="cart-summary-box">
+                <h3>Total a Pagar: <span id="cart-total">S/ 0.00</span></h3>
+                <button class="btn-confirmar" onclick="enviarAlServidor()">Confirmar Pedido 🍰</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="footer-bar">
+        <p>© 2026 D'KAHEL - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script2.js"></script>
+
+</body>
+</html>

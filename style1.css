@@ -1,0 +1,117 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 20 abr. 2026, 7:19:39 p. m.
+    Author     : KaHeL
+*/
+/* MISMO ESTILO BASE */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #cde7ff, #ffd6f6, #e0ccff);
+}
+
+/* MENÚ */
+.menu {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: flex;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* HEADER MODIFICADO: Centra el nuevo cuadro flotante */
+header {
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px 10px 15px;
+}
+
+/* NUEVO: EL CUADRADO FLOTANTE CON BLUR (Look igual al menú) */
+.banner-header {
+    background: rgba(255, 255, 255, 0.65); /* Fondo semi-transparente */
+    backdrop-filter: blur(12px); /* Efecto vidrio esmerilado */
+    -webkit-backdrop-filter: blur(12px); /* Soporte Safari/Chrome antiguo */
+    padding: 20px 45px; /* Espacio interno para el texto */
+    border-radius: 18px; /* Mismo redondeado que tus tarjetas de postres */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); /* Sombra suave flotante */
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Ajustes para los textos dentro del cuadro */
+.banner-header h1 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 28px;
+}
+
+.banner-header p {
+    margin: 0;
+    color: #555;
+    font-size: 15px;
+}
+
+/* CATÁLOGO */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* TARJETAS */
+.tarjeta {
+    background: white;
+    width: 260px;
+    border-radius: 18px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.tarjeta a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #25D366;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+.footer-bar {
+    width: 100%;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 12px;
+    margin-top: 40px;
+}
+
